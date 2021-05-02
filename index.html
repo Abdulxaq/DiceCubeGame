@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CubeGame</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>DiceCube</h1>
+    <i>Guess the cube side!</i>
+    <div id="boxes" >
+        <h1 id="aa" >?</h1>
+        <h1 id="ww" >?</h1>
+        <div class="inside_box" id="one"></div>
+        <div class="inside_box"  id="two"></div>
+        <div class="inside_box"  id="three"></div>
+        <div class="inside_box"  id="four"></div>
+        <div class="inside_box"  id="five"></div>
+        <div class="inside_box"  id="six"></div>
+        <div class="side" id="left" >
+            <div onclick="guess()" class="outside_box" id="one-little"></div>
+            <div onclick="guess2()" class="outside_box" id="two-little"></div>
+            <div onclick="guess3()" class="outside_box" id="three-little"></div>
+        </div>
+        <div class="side" id="right" >
+            <div onclick="guess4()" class="outside_box" id="four-little"></div>
+            <div onclick="guess5()" class="outside_box" id="five-little"></div>
+            <div onclick="guess6()" class="outside_box" id="six-little"></div>
+        </div>
+        <audio id="loser" src="./assets/images/loser.mp3"></audio>
+        <audio id="winner" src="./assets/images/winner.mp3"></audio>
+    </div>
+    <div id="alert" >
+        <h3 id="was" ></h3>
+    </div>
+    <script src="app.js" ></script>
+</body>
+</html>

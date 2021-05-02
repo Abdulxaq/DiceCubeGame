@@ -1,0 +1,266 @@
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(35deg, rgb(91, 237, 242), rgb(184, 255, 69));
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+h1 {
+    user-select: none;
+  margin-top: 50px;
+  color: rgb(8, 33, 59);
+  font-size: 50px;
+  text-shadow: 0 0 5px rgb(153, 151, 151);
+}
+i {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(8, 33, 59);
+  font-size: 26px;
+    user-select: none;
+    margin-bottom: 20px;
+}
+#boxes {
+    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(35deg, rgb(184, 255, 69), rgb(91, 237, 242));
+  width: 300px;
+  height: 300px;
+  filter: brightness(0.9);
+  border: 3px white solid;
+  -webkit-filter: brightness(0.9);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+#aa{
+    z-index: -5px;
+}
+#ww{
+    z-index: 5px;
+}
+#boxes h1 {
+    user-select: none;
+  position: absolute;
+  display: inline;
+  font-size: 200px;
+  animation: question_mark 3s infinite;
+  -webkit-animation: question_mark 3s infinite;
+  top: -25px;
+}
+@keyframes question_mark {
+  0% {
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+}
+100%{
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+}
+}
+/* **********************SIDES************************** */
+.side {
+  display: flex;
+justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  height: 300px;
+  width: 100px;
+}
+#left {
+  left: -113px;
+}
+#right {
+  right: -113px;
+}
+/* **********************LITTLE-BOXES************************** */
+.outside_box{
+    width: 90px;
+    height: 90px;
+
+}
+.outside_box:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transition: 0.7s ease-out;
+    -webkit-transition: 0.7s ease-out;
+    -moz-transition: 0.7s ease-out;
+    -ms-transition: 0.7s ease-out;
+    -o-transition: 0.7s ease-out;
+}
+#one-little{
+    border-radius: 10px;
+    background-image: url(./assets/images/one.png) ;
+    background-position: center;
+    background-size: cover;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#two-little{
+    border-radius: 10px;
+    background-image: url(./assets/images/two.png) ;
+    background-position: center;
+    background-size: cover;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#three-little{
+    border-radius: 10px;
+    background-image: url(./assets/images/three.png) ;
+    background-position: center;
+    background-size: cover;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#four-little{
+    border-radius: 10px;
+    background-image: url(./assets/images/four.png) ;
+    background-position: center;
+    background-size: cover;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#five-little{
+    border-radius: 10px;
+    background-image: url(./assets/images/five.png) ;
+    background-position: center;
+    background-size: cover;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#six-little{
+    border-radius: 10px;
+    background-image: url(./assets/images/six.png) ;
+    background-position: center;
+    background-size: cover;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/* **********************BIG-BOXES************************** */
+.inside_box{
+    border: 1px red solid;
+    position: absolute;
+    width: 290px;
+    height: 290px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+#one{
+    background-image: url(./assets/images/one.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+}
+#two{
+    background-image: url(./assets/images/two.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+}
+#three{
+    background-image: url(./assets/images/three.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+}
+#four{
+    background-image: url(./assets/images/four.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+}
+#five{
+    background-image: url(./assets/images/five.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+}
+#six{
+    background-image: url(./assets/images/six.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+}
+
+.active{
+    opacity: 1;
+}
+
+/* ----------------------Alert------------------------- */
+
+#alert{
+    opacity: 0;
+    transition: 1s;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(35deg, rgb(91, 237, 242), rgb(184, 255, 69));
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50vw;
+    top: 50vh;
+    width: 400px;
+    height: 250px;
+    border: 5px rgb(11, 41, 80) solid;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+#alert h3{
+
+    text-align: center;
+    color:  rgb(11, 41, 80);
+    font-size: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+
+}
